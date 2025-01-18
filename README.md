@@ -26,7 +26,7 @@ on:
 
 jobs:
   update-badge:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout repository
