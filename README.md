@@ -14,7 +14,6 @@ This is a GitHub Action that fetches your latest TryHackMe badge, downloads it, 
 - Configure the action with the following inputs:
     - GITHUB_TOKEN: Your GitHub Personal Access Token (required, set as a secret).
     - image_path: The path to store the downloaded badge image (defaults to ./assets/tryhackme-badge.png).
-    - username: Your TryHackMe username (defaults to the value in a secret named THM_USERNAME).
     - user_id: Your TryHackMe user ID (defaults to the value in a secret named THM_USER_ID).
 
 ```
@@ -37,7 +36,6 @@ jobs:
       uses: DhanushNehru/tryhackme-badge-action-workflow@v1.0
       with:
         image_path: './assets/tryhackme-badge.png'
-        username: 'your_tryhackme_username'
         user_id: 'your_tryhackme_user_id'
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
